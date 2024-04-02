@@ -10,7 +10,7 @@
     "show": 431,
     "database": 8,
     "databaseName": "Tema 4",
-    "canvasType": "@dineug/erd-editor/builtin-schema-sql",
+    "canvasType": "ERD",
     "language": 1,
     "tableNameCase": 4,
     "columnNameCase": 2,
@@ -60,7 +60,7 @@
           "color": ""
         },
         "meta": {
-          "updateAt": 1710840167034,
+          "updateAt": 1712046820429,
           "createAt": 1710839217650
         }
       },
@@ -85,7 +85,7 @@
           "color": ""
         },
         "meta": {
-          "updateAt": 1710840172630,
+          "updateAt": 1712046820429,
           "createAt": 1710839366626
         }
       }
@@ -107,7 +107,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1710840167034,
+          "updateAt": 1712046820429,
           "createAt": 1710839227786
         }
       },
@@ -127,7 +127,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1710840167034,
+          "updateAt": 1712046820429,
           "createAt": 1710839272536
         }
       },
@@ -187,7 +187,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1710840167034,
+          "updateAt": 1712046820429,
           "createAt": 1710839403663
         }
       }
