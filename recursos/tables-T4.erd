@@ -45,11 +45,13 @@
         "comment": "",
         "columnIds": [
           "tJ0QJR6uZOnrOSeB_Xxpo",
-          "vEcBFs-VA2jurwcNJMZxK"
+          "vEcBFs-VA2jurwcNJMZxK",
+          "MSKafivz83LMv20OWS0US"
         ],
         "seqColumnIds": [
           "tJ0QJR6uZOnrOSeB_Xxpo",
-          "vEcBFs-VA2jurwcNJMZxK"
+          "vEcBFs-VA2jurwcNJMZxK",
+          "MSKafivz83LMv20OWS0US"
         ],
         "ui": {
           "x": 124,
@@ -60,7 +62,7 @@
           "color": ""
         },
         "meta": {
-          "updateAt": 1712046820429,
+          "updateAt": 1712908448515,
           "createAt": 1710839217650
         }
       },
@@ -85,7 +87,7 @@
           "color": ""
         },
         "meta": {
-          "updateAt": 1712046820429,
+          "updateAt": 1712908436019,
           "createAt": 1710839366626
         }
       }
@@ -107,27 +109,27 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1712046820429,
+          "updateAt": 1712908436018,
           "createAt": 1710839227786
         }
       },
       "vEcBFs-VA2jurwcNJMZxK": {
         "id": "vEcBFs-VA2jurwcNJMZxK",
         "tableId": "D-1jtq7A5OrmsTDXIPaOe",
-        "name": "NAME",
+        "name": "FIRST_NAME",
         "comment": "",
         "dataType": "VARCHAR2(20)",
         "default": "",
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 60,
+          "widthName": 69,
           "widthComment": 60,
           "widthDataType": 81,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1712046820429,
+          "updateAt": 1712908467283,
           "createAt": 1710839272536
         }
       },
@@ -187,8 +189,28 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1712046820429,
+          "updateAt": 1712908436019,
           "createAt": 1710839403663
+        }
+      },
+      "MSKafivz83LMv20OWS0US": {
+        "id": "MSKafivz83LMv20OWS0US",
+        "tableId": "D-1jtq7A5OrmsTDXIPaOe",
+        "name": "LAST_NAME",
+        "comment": "",
+        "dataType": "VARCHAR(20)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 67,
+          "widthComment": 60,
+          "widthDataType": 75,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1712908480666,
+          "createAt": 1712908448515
         }
       }
     },
@@ -223,7 +245,7 @@
       1710839272536,
       -1,
       {
-        "name": 1710839282119,
+        "name": 1712908467282,
         "dataType": 1710839660579,
         "default": 1710839612068
       }
@@ -269,6 +291,15 @@
         "name": 1710839407451,
         "dataType": 1710839673177,
         "default": 1710839617055
+      }
+    ],
+    "MSKafivz83LMv20OWS0US": [
+      "tableColumnEntities",
+      1712908448512,
+      -1,
+      {
+        "name": 1712908454343,
+        "dataType": 1712908480666
       }
     ]
   }
