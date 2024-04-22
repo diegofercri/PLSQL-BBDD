@@ -4,7 +4,7 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": 0,
+    "scrollTop": -284,
     "scrollLeft": 0,
     "zoomLevel": 1,
     "show": 431,
@@ -26,7 +26,8 @@
       32,
       64
     ],
-    "maxWidthComment": -1
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
   },
   "doc": {
     "tableIds": [

@@ -10,7 +10,7 @@
     "show": 431,
     "database": 8,
     "databaseName": "Tema 4",
-    "canvasType": "ERD",
+    "canvasType": "@dineug/erd-editor/builtin-schema-sql",
     "language": 1,
     "tableNameCase": 4,
     "columnNameCase": 2,
@@ -26,7 +26,8 @@
       32,
       64
     ],
-    "maxWidthComment": -1
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
   },
   "doc": {
     "tableIds": [
@@ -116,20 +117,20 @@
       "vEcBFs-VA2jurwcNJMZxK": {
         "id": "vEcBFs-VA2jurwcNJMZxK",
         "tableId": "D-1jtq7A5OrmsTDXIPaOe",
-        "name": "FIRST_NAME",
+        "name": "NAME",
         "comment": "",
         "dataType": "VARCHAR2(20)",
         "default": "",
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 69,
+          "widthName": 60,
           "widthComment": 60,
           "widthDataType": 81,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1712908467283,
+          "updateAt": 1713803810087,
           "createAt": 1710839272536
         }
       },
@@ -196,20 +197,20 @@
       "MSKafivz83LMv20OWS0US": {
         "id": "MSKafivz83LMv20OWS0US",
         "tableId": "D-1jtq7A5OrmsTDXIPaOe",
-        "name": "LAST_NAME",
+        "name": "SURNAME",
         "comment": "",
         "dataType": "VARCHAR(20)",
         "default": "",
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 67,
+          "widthName": 60,
           "widthComment": 60,
           "widthDataType": 75,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1712908480666,
+          "updateAt": 1713803825510,
           "createAt": 1712908448515
         }
       }
@@ -245,7 +246,7 @@
       1710839272536,
       -1,
       {
-        "name": 1712908467282,
+        "name": 1713803810086,
         "dataType": 1710839660579,
         "default": 1710839612068
       }
@@ -298,7 +299,7 @@
       1712908448512,
       -1,
       {
-        "name": 1712908454343,
+        "name": 1713803825509,
         "dataType": 1712908480666
       }
     ]
