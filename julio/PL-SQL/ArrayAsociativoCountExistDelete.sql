@@ -13,7 +13,7 @@ begin
   if not v_bonoloto.exists(7) then 
     dbms_output.put_line(' El 7 no existe');
   end if;
-  dbms_output.put_line('Tenemos '||v_bonoloto.count||' elementos ');
+  dbms_output.put_line('Hay '||v_bonoloto.count||' Elementos');
   for i in 1..10 loop
     if v_bonoloto.exists(i) then
       dbms_output.put_line(' Existe antes de delete '||i);      
