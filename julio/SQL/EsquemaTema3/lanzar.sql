@@ -1,3 +1,0 @@
-@esquema
-@agrupa
-@tablaalias
