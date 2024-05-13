@@ -1,2 +1,1 @@
-set serveroutput on
-/
+SELECT * FROM OFICIO WHERE NUMOFICIO = 1;
