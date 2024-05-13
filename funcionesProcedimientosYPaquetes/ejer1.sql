@@ -8,8 +8,18 @@ DECLARE
         IF P_RES THEN
             DBMS_OUTPUT.PUT_LINE('id=' || P_OFICIO.NUMOFICIO || ' ofi=' || TRIM(P_OFICIO.OFICIO) || ' desc=' || TRIM(P_OFICIO.DESCRIPCION) );
         ELSE
-            DBMS_OUTPUT.PUT_LINE('id=' || TRIM(P_OFICIO.OFICIO || ' no existe') );
+            DBMS_OUTPUT.PUT_LINE('id=' || TRIM(P_OFICIO.NUMOFICIO || ' no existe') );
         END IF;
+    END;
+
+    FUNCTION setOficio (v_oficio OFICIO%ROWTYPE) RETURN BOOLEAN IS
+        v_numoficio OFICIO.NUMOFICIO%TYPE;
+    BEGIN
+        SELECT OFICIO.NUMOFICIO INTO v_numoficio FROM OFICIO WHERE NUMOFICIO = v_oficio.NUMOFICIO;
+        RETURN TRUE;
+    EXCEPTION
+        WHEN NO_DATA_FOUND THEN
+            RETURN FALSE;
     END;
 
 BEGIN
