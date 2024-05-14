@@ -1,4 +1,5 @@
 SET SERVEROUTPUT ON;
+SET AUTOCOMMIT OFF;
 /* En esta ocasión no vamos a controlar que se produzcan excepciones */
 /* NOTA: SI ejecutamos varias veces el programa debe insertar correctamente */
 DECLARE
