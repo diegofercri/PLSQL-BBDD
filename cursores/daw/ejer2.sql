@@ -1,39 +1,40 @@
 SET SERVEROUTPUT ON;
 
 DECLARE
-    v_DetallePedido DETALLEPEDIDO%rowtype;
+    v_DetallePedido DETALLEPEDIDO.NUMPEDIDO%type;
+    v_LineaDetalle DETALLEPEDIDO%rowtype;
 
-    v_empleado Empleado%rowtype;
+    v_subtotal NUMBER := 0;
+    v_total NUMBER := 0;
 
-    -- Variable de acoplamiento utilizada en la consulta
-    -- Podría también haber usado v_alojamiento.numaloj pero sería excesivo el grado de acoplamiento
-    v_numaloj Alojamiento.numaloj%type;
+    CURSOR c_DetallePedido IS
+        SELECT NUMPEDIDO
+        FROM DETALLEPEDIDO
+        GROUP BY NUMPEDIDO;
 
-    CURSOR c_Alojamiento IS
+    CURSOR c_LineaDetalle (p_NumPedido DETALLEPEDIDO.NUMPEDIDO%type) IS
         SELECT *
-        FROM Alojamiento
-        ORDER BY alojamiento;
-
-    CURSOR c_Empleado (p_numaloj Alojamiento.numaloj%type) IS
-        SELECT *
-        FROM Empleado
-        WHERE alojamiento=p_numaloj
-        ORDER BY nombre;
+        FROM DETALLEPEDIDO
+        WHERE NUMPEDIDO = p_NumPedido;
 
 BEGIN
-    OPEN c_Alojamiento;
+    OPEN c_DetallePedido;
         LOOP
-            FETCH c_Alojamiento INTO v_alojamiento;
-            EXIT WHEN c_Alojamiento%NOTFOUND;
-            dbms_output.put_line(v_alojamiento.alojamiento);
-            OPEN c_Empleado(v_alojamiento.numaloj);
+            FETCH c_DetallePedido INTO v_DetallePedido;
+            EXIT WHEN c_DetallePedido%NOTFOUND;
+            dbms_output.put_line('PEDIDO:' || chr(9) || v_DetallePedido);
+            OPEN c_LineaDetalle (v_DetallePedido);
                 LOOP
-                    FETCH c_Empleado INTO v_Empleado;
-                    EXIT WHEN c_Empleado%NOTFOUND;
-                    dbms_output.put_line(chr(9)||v_Empleado.nombre);
+                    FETCH c_LineaDetalle INTO v_LineaDetalle;
+                    EXIT WHEN c_LineaDetalle%NOTFOUND;
+                    v_subtotal := v_LineaDetalle.PRECIOACTUAL * v_LineaDetalle.CANTIDAD;
+                    dbms_output.put_line(chr(9) || chr(9) || chr(9) || v_subtotal);
+                    v_total := v_total + v_subtotal;
                 END LOOP;
-            CLOSE c_Empleado;
+                    dbms_output.put_line('TOTAL:' || chr(9) || chr(9) || chr(9) || v_total);
+                    v_total := 0;
+            CLOSE c_LineaDetalle;
         END LOOP;
-    CLOSE c_Alojamiento;
+    CLOSE c_DetallePedido;
 END;
 /
