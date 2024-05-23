@@ -6,3 +6,5 @@ begin
   :new.edad:=:new.numemp;
 end;
 /
+
+ 
