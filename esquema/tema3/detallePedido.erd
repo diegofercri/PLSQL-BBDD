@@ -1,0 +1,182 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": 431,
+    "database": 8,
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "cwU3yHvBIh0ZLEfUsLNwn"
+    ],
+    "relationshipIds": [],
+    "indexIds": [],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "cwU3yHvBIh0ZLEfUsLNwn": {
+        "id": "cwU3yHvBIh0ZLEfUsLNwn",
+        "name": "DETALLEPEDIDO",
+        "comment": "",
+        "columnIds": [
+          "kEujipXX4tTl-sKnkcv1e",
+          "gdYi8CVaLV0K7aVO5vka3",
+          "5_82fBG_jVepH5mBZ7SQE",
+          "98sqBa1SALdgDFmz2ynMM",
+          "JgbBHjQQJkRJ5hrKAPMXu"
+        ],
+        "seqColumnIds": [
+          "kEujipXX4tTl-sKnkcv1e",
+          "gdYi8CVaLV0K7aVO5vka3",
+          "5_82fBG_jVepH5mBZ7SQE",
+          "98sqBa1SALdgDFmz2ynMM",
+          "JgbBHjQQJkRJ5hrKAPMXu"
+        ],
+        "ui": {
+          "x": 196,
+          "y": 200,
+          "zIndex": 2,
+          "widthName": 89,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1716488970264,
+          "createAt": 1716488968362
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "kEujipXX4tTl-sKnkcv1e": {
+        "id": "kEujipXX4tTl-sKnkcv1e",
+        "tableId": "cwU3yHvBIh0ZLEfUsLNwn",
+        "name": "NUMPEDIDO",
+        "comment": "",
+        "dataType": "NUMBER(4)",
+        "default": "",
+        "options": 2,
+        "ui": {
+          "keys": 1,
+          "widthName": 72,
+          "widthComment": 60,
+          "widthDataType": 64,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1716488968363,
+          "createAt": 1716488968363
+        }
+      },
+      "gdYi8CVaLV0K7aVO5vka3": {
+        "id": "gdYi8CVaLV0K7aVO5vka3",
+        "tableId": "cwU3yHvBIh0ZLEfUsLNwn",
+        "name": "LINEADETALLE",
+        "comment": "",
+        "dataType": "NUMBER(2)",
+        "default": "",
+        "options": 2,
+        "ui": {
+          "keys": 1,
+          "widthName": 79,
+          "widthComment": 60,
+          "widthDataType": 64,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1716488968363,
+          "createAt": 1716488968363
+        }
+      },
+      "5_82fBG_jVepH5mBZ7SQE": {
+        "id": "5_82fBG_jVepH5mBZ7SQE",
+        "tableId": "cwU3yHvBIh0ZLEfUsLNwn",
+        "name": "PRODUCTO",
+        "comment": "",
+        "dataType": "VARCHAR2(30)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 64,
+          "widthComment": 60,
+          "widthDataType": 81,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1716488968363,
+          "createAt": 1716488968363
+        }
+      },
+      "98sqBa1SALdgDFmz2ynMM": {
+        "id": "98sqBa1SALdgDFmz2ynMM",
+        "tableId": "cwU3yHvBIh0ZLEfUsLNwn",
+        "name": "PRECIOACTUAL",
+        "comment": "",
+        "dataType": "NUMBER(8)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 84,
+          "widthComment": 60,
+          "widthDataType": 64,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1716488968363,
+          "createAt": 1716488968363
+        }
+      },
+      "JgbBHjQQJkRJ5hrKAPMXu": {
+        "id": "JgbBHjQQJkRJ5hrKAPMXu",
+        "tableId": "cwU3yHvBIh0ZLEfUsLNwn",
+        "name": "CANTIDAD",
+        "comment": "",
+        "dataType": "NUMBER(4)",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 64,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1716488968363,
+          "createAt": 1716488968363
+        }
+      }
+    },
+    "relationshipEntities": {},
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  },
+  "lww": {}
+}
